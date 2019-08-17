@@ -27,26 +27,7 @@ public class Aluno {
         this.numeroDeAluno = numeroDeAluno;
     }
 
-    //    boolean Search(String nome){
-//        if(ArrayList.contains("Tiago")){
-//            return true;
-//        }
-//        else{
-//            return false;
-//        }
-//    }
-
-    @Override
-    public boolean equals(Object alunoNovo) {
-        if (this == alunoNovo){
-            return true;
-        }
-        if (!(alunoNovo instanceof Aluno)){
-            return false;
-        }
-        return this.getNumeroDeAluno() == ((Aluno) alunoNovo).getNumeroDeAluno();
+    public boolean equals(Aluno umAluno) {
+        return this.numeroDeAluno.equals(umAluno.getNumeroDeAluno());
     }
-
-
-
 }
